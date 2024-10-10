@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = Number(prompt('enter first number'));
+        var num2 = Number(prompt("enter second number"));
+        var op =prompt(`enter + for Addition, - for subtraction, * for multiplication, / for division`);
+        switch(op){
+           case "+":alert(`addition is ${num1+num2}`); break;
+           case "-":alert(`subtrication is ${num2-num1}`); break;
+           case "*":alert(`multiplaction is ${num1*num2}`);break;
+           case "/":alert(`divison is ${num2/num1}`);break;
+            default:alert(`kindly enter correct operator`);
+        }
+    </script>
+</body>
+</html>
