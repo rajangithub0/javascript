@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let perc=prompt("enter the percentage")
+        if(perc>=80 && perc<=100){
+            document.write(`<h1>you got first place ${perc}`)
+        }else if(perc>=60 && perc<80){
+            document.write(`<h1> you got second place ${perc}`)
+        }else if(perc>=40 && perc<60){
+            document.write(`<h1> you got thrid place ${perc}`)
+        }else if(perc>=33 && perc<40){
+            document.write(`<h1>you passed the exam ${perc}`)
+        }else if(perc>=0 && perc<33){
+            document.write(`<h1>you failed in exam ${perc}`)
+        }else{
+            document.write(`plese enter the correct marks`)
+        }
+    </script>
+</body>
+</html>
