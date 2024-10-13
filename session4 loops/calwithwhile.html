@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(true){
+        var num1=Number(prompt("enter the first number"));
+        var num2=Number(prompt('enter the second number'));
+        var op=prompt(`+ for addition,- for subtraction,* for multiple,/ for division`);
+        switch(op){
+            case "+":alert(`addition is${num1+num2}`);break;
+            case "-":alert(`subtraction is ${num2-num1}`);break;
+            case "*":alert(`multiple is${num1*num2}`);break;
+            case "/":alert(`divison is ${num2/num1}`);break;
+
+        }
+        var input= prompt("enter y to countinous and n to exit")
+        if(input==`y` ||input ==`Y`){
+            continue;
+        }else{
+            break;
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`Odd Number</br>`)
+        for (var i=1; i<=100;i++){
+            document.write(`${i}`)
+        }
+        
+        document.write('even number</br>')
+        for  (var j=2; j<=100; j+=2){
+            document.write(`${j}`)
+        }
+
+        document.write(`</br>`)
+        var total=0;
+        for(var s=1; s<=100; s++){
+            // document.write(`old total ${total}+ value of s${s}`)
+            total+=s;
+            // document.write(`new total =${total}`)
+        }
+        document.write(`total sum is ${total}`)
+
+        document.write(`</br>`)
+        document.write('sum is'+total+"</br>")
+        var sub=0;
+        for (var a=1;a<=100;a++){
+            if(a%3==0){
+                document.write(a+",")
+                sub+=a;
+            }
+        }
+        document.write(sub)
+    </script>
+</body>
+</html>
