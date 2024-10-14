@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>async function</h1>
+    <script>
+        async function myFunction(second){
+            let date= new Date();
+            let current=new Date();
+            while(current-date<second*5000){
+                current= new Date();
+            }
+            throw new Error('this is error massage')
+            return "hello";
+        }
+
+        function success(value){
+            console.log("it is success full"+value);
+        }
+
+        function error(value){
+            console.log("it is error"+value);
+        }
+
+        myFunction().then(success,error)
+        console.log("this is excuted");
+    </script>
+</body>
+</html>
