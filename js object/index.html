@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    <script>
+        let student={
+            name:"Rajan",
+            class:"Bsc.it",
+            Rollno:4511,
+            result:"pass",
+            marks:60,
+            display:function(){
+                console.log("name of the student "+this.name+" has marks "+this.marks);
+            }
+        }
+
+        let orinal =0;
+        function varUpdate(x){
+            x.marks=98;
+            }
+            student.display()
+        console.log("value"+ +student.marks);
+        varUpdate(student)
+        console.log("updatevvalue"+ + student.marks);
+        student.display()
+    </script>
+</body>
+</html>

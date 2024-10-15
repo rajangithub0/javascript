@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student1={
+            name:"Rajan",
+            class:"Bsc.it",
+            Rollno:4511,
+            result:"pass",
+            marks:60,
+            20:10,
+            display:function(){
+                console.log("name of the student "+this.name+" has marks "+this.marks);
+            }
+        }
+
+        function Student(fname,lname,sclass,rollno,marks){
+            this.fname=fname;
+            this.lname=lname;
+            this.sclass=sclass;
+            this.rollno=rollno;
+            this.marks=marks;
+            this[20]=1000
+            this.display=function(){
+                console.log(this.fname)
+
+            }
+        }
+
+        let student2 = new Student("Rajan","rana","msc.it",4511,96);
+        let student3 = new Map();
+        student3.set('name','rohan');
+        student3.set('sclass','bca');
+        student3.set('marks',55)
+    </script>
+</body>
+</html>

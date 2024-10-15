@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 150px;
+            border: 2px sold red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="document.body.style.backgroundColor='white'"
+        
+        id="changecolor">on mouse hover all page color will change</div>
+
+        <div id="time"></div>
+
+        <script>
+            var i=0;
+            document.getElementById('changecolor').onmouseover=function(){
+                    i++;
+                document.getElementById('time').innerHTML="this is mouse over "+i;
+            }
+
+            document.getElementById('changecolor').onmousemove=function(){
+            i++;
+            document.getElementById('time').innerhtml='this is mousemove element'+i;
+            }
+
+            document.getElementById('changecolor').onmousedown=function(){
+                alert('mouse down is occured')
+            }
+
+            document.getElementById('changecolor').onmouseup=function(){
+                alert('mouse up is occured')
+            }
+
+            
+           
+        </script>
+</body>
+</html>
