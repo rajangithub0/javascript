@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("enter any number");
+        var ognum =num
+        if(!isNaN(num)){
+            var fact=1;
+            while(num>0){
+                fact*=num; // fact=fact*num
+                num--; //decrese num by 1
+            }
+            document.write(`factroal of ${ognum} is ${fact}`);
+        }else{
+            alert('enter number only')
+        }
+
+//         num=4;
+// ognum=num ; //4
+// fact=1
+
+// while condition check
+
+// exc1==  4>0 --- true
+// fact=1*4=4
+// num =3;
+// fact =4
+
+// exc2 == 3>0 -- true
+// fact = 4*3 =12
+// num=2;
+// fact=12;
+
+// exc3 == 2>0 --true
+// fact == 12*2==24;
+// num=1;
+// fact=24;
+
+// exc4 ==1>0 -- --true
+// fact== 24*1=24
+// num =0;
+// fact =24;
+
+// exc =0>0 ---false
+
+// loop terminated
+    </script>
+
+
+<!--  -->
+</body>
+</html>

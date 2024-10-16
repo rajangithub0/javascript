@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var limit=Number(prompt("enter you limit"));
+        if(!isNaN(limit)){
+            var count=0
+            var total=0;
+            for(var i=1;i<=limit;i++){
+                var input=Number(prompt("enter any number"));
+                if(!isNaN(input)){
+                    total+=input;
+                    count++;
+                }
+            }
+            document.write(`<div>sum of ${count}number ${total}</div>`)
+            document.write(`<div>${limit-count}elements dicard due to wrong input</div>`);
+            document.write(`<div>average is ${total/(count)}</div>`)
+        }
+    </script>
+</body>
+</html>
