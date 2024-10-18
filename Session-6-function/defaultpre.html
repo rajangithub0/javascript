@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function simpleInt(princpalAmount,noOfYear,rateOfInterst=4){
+            return (princpalAmount*noOfYear*rateOfInterst)/100;
+        }
+
+        alert(simpleInt(10000,5,7.7))// full value
+        alert(simpleInt(5000,5))//default value get
+        alert(simpleInt(
+            prompt("enter princpal amount"),
+            prompt("enter number of year"),
+            prompt('enter rate of interest')
+        ))
+    </script>
+</body>
+</html>

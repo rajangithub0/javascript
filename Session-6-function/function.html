@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="print()">click me</button>
+    <button onclick="hello()">world</button>
+    <button onclick="cleardata()"> clear</button>
+    <h3 id="massage">
+
+    </h3>
+    <script>
+        //function create
+        function print(){
+            console.log("function called");
+        }
+        function hello(){
+            document.getElementById('massage').innerHTML='Hello world';
+        }
+        function cleardata(){
+            document.getElementById('massage').innerHTML=" ";
+        }
+
+
+        //function called
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            margin: 30px;
+        }
+        input{
+            height: 30px;
+            width: 40%;
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input,button{
+            height: 30px;
+            width: 40%;
+            padding: 10px;
+            margin-top: 10px;
+            display: block;
+            color: white;
+        }
+         
+        .btn{
+            display: inline-block;
+            height: 90px;
+            width: 20%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: brown;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter first name" id="fname" />
+    <input type="text" placeholder="enter last naem" id="lname" />
+    <button onclick="save()" class="btn">show full name</button>
+    <button onclick="cleardata()" class="btn">clear</button>
+    <h2 id="massage"></h2>
+    <script>
+        function save(){
+        let firstName=document.getElementById('fname').value;
+        let lastName=document.getElementById('lname').value;
+        
+        let result=`welcome ${firstName} ${lastName}`
+        document.getElementById('massage').innerHTML=result
+        }
+
+        function cleardata(){
+            let firstName=document.getElementById('fname').value="";
+            let lastName=document.getElementById('lname').value="";
+            document.getElementById('massage').innerHTML=''
+        }
+    </script>
+</body>
+</html>
