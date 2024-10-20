@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="inner"></div>
+    <h1 name="h1">heading1</h1>
+    <h1 name="h1">heading2</h1>
+    <div class="t1 t2 t3"></div>
+    <div class="t1"></div>
+    <script>
+        document.getElementById('inner').innerHTML="<strong>hello world</strong>";
+        let cls=document.getElementsByClassName('t2')
+        console.log(cls);
+        document.write('welcome to my page')
+        let element =document.getElementsByName('h1')
+        console.log(element);
+        let tg=document.getElementsByTagName("h1")
+        console.log(tg);
+        let qry=document.querySelector("div#inner");
+        console.log(qry);
+    </script>
+</body>
+</html>

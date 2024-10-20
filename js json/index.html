@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsonobj='{"firstname":"rajan","lastname":"rajput","middlename":null,"age":25,"iscity":true,"subject":["english","math","computer"],"address":{"city":"chandigarh","state":"punjab","country":"india" },"dob":"1996-09-16","print":"function(){console.log(this.firstname);}"}';
+        let jsonobjparse=JSON.parse(jsonobj);
+        let obj=jsonobjparse.print=eval("("+jsonobjparse.print+")")
+        console.log(obj);
+        console.log(jsonobjparse);
+        let printname=jsonobjparse.print();
+        console.log(printname);
+        console.log(jsonobj);
+    </script>
+</body>
+</html>
