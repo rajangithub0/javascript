@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>average of three number</h3>
+    <hr>
+    <input placeholder="enter first number" id="num1"><br><br>
+    <input placeholder="enter second number" id="num2"><br><br>
+    <input placeholder="enter thrid number" id="num3"><br><br>
+    <button onclick="calaulate()">calaulate</button>
+    <h4 id="result"></h4>
+    <script>
+
+        function calaulate(){
+            const num1=Number(document.getElementById('num1').value);
+            const num2=Number(document.getElementById('num2').value);
+            const num3=Number(document.getElementById('num3').value);
+            const total= average(num1,num2,num3).toFixed(2)
+            document.getElementById('result').innerHTML=`avergae of ${num1}, ${num2}, ${num3} is average${total}`;
+        }
+    
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

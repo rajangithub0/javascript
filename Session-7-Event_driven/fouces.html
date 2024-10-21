@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input{
+            height: 30px;
+            width: 30%;
+            outline: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter first name" id="fname" onkeyup="upper()"/>
+    <br><br>
+    <input type="text" placeholder="enter last name" id="lname">
+    <br><br>
+
+</body>
+<script>
+    const fname=document.querySelector('#fname');
+    fname.addEventListener('focus',function upper(){
+        fname.style.border='2px solid red'
+        fname.value=fname.value.toUpperCase()
+    })
+    fname.addEventListener('blur',function(){
+        fname.style.border="none ";
+    })
+</script>
+</html>
