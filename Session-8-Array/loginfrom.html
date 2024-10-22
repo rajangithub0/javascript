@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginform" novalidate>
+        <input type="text" placeholder="enter your email" id="email" required> <span id="erroremail"></span><br><br>
+       
+        <input type="password" placeholder="********" id="pass" required><span id="errorpass"></span><br><br>
+        
+        <input type="submit" value="login">
+    </form>
+    <script>
+        document.querySelector('#loginform').addEventListener('submit',function(event){
+            
+            event.preventDefault();
+            const email=document.querySelector('#email');
+            const pass=document.querySelector('#pass');
+            const erroremail=document.querySelector('#erroremail');
+            const errorpass=document.querySelector('#errorpass')
+
+            if(email.value==''){
+                erroremail.textContent='email empty'
+               
+            }else if(pass.value==''){
+                erroremail.textContent=''
+                errorpass.textContent='password empty'
+               
+            }
+            else{
+                errorpass.textContent=""
+                if(email.value=='admin@gmail.com' && pass.value=='123456'){
+                alert('login successfull')
+            }else{
+                alert('invalid value')
+            }
+            }
+
+            
+        })
+    </script>
+</body>
+</html>

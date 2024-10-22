@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names=['alex','bob','david','catty','john','smith'];
+        for(let na of names){
+            document.write(`<h3>${na}</h3>`)
+        }
+
+        const data=['rajan',true,'javascript',undefined,7]
+        for(let da of data){
+            document.write(`<h2>${da}</h2>`)
+        }
+        for (let x in data){
+            // document.write(`<h2> ${x}</h2>`)
+            document.write(`<h2> ${x[2]}</h2>`)
+        }
+    </script>
+</body>
+</html>
