@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =10;
+        function print(){
+        console.log(`print value inside the print function ${num}`);
+        }
+        print();
+        function dis(){
+            let num=20;
+            console.log(`print value inside the display variable value if assign if its not assign the value it consider global variablae value ${num}`);
+        }
+        dis()
+
+        function test(){
+            var v1=98;
+            console.log(`var first time initlize ${v1}`);
+            var v1=67;
+            console.log(` var second time initlized ${v1}`);
+            let n1=55;
+            console.log(`let first time initilized ${n1}`);
+            n1=25;
+            console.log(`let donot resign the varable name again but value is changed ${n1}`);
+        }
+        test()
+    </script>
+</body>
+</html>
