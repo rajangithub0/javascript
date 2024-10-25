@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loadXMDoc(){
+            const xhttp= new XMLHttpRequest();
+            xhttp.onload=function(){
+                let xmlDoc=xhttp.responseXML;
+                let nm=xmlDoc.getElementsByTagName("id")
+                for (let i=1;i<nm.length;i++){
+                    let nme= nm[i];
+                    console.log(nme.getElementsByTagName("name")[0].childNodes[0].nodeValue);
+
+                }
+                // console.log(title);
+                // console.log(xmlDoc);
+            }
+            xhttp.open("GET","catalog.xml");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
