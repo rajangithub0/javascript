@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibo(length){
+            let a=0;
+            let b=1;
+            let result=`${a}, `;
+            let i=1;
+            while(i<=length){
+                console.log(result);
+                let c=a+b;
+                result+=`${c}, `;
+                a=b;
+                b=c;
+                i++
+            }
+            document.write(`<h3> ${result}`)
+        }
+        fibo(5)
+    </script>
+</body>
+</html>
