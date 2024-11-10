@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time"></h1>
+    <button onclick="timer()">start</button>
+    <script>
+        function timer(){
+            let count=15;
+           
+           const xyz= setInterval(function() {
+                document.querySelector('#time').textContent=`00: ${count>9? count: '0'+count}`
+                count--;
+                if(count<0){
+                    clearInterval(xyz);
+                    alert("oops time up")
+                }
+            },1000 );
+        }
+    </script>
+</body>
+</html>
