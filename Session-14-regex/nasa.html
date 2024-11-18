@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astory picture of the day</title>
+  </head>
+  <img>
+    <h1>astory pictue of the day</h1>
+    <button onclick="fetchdata()">Fetch Data</button>
+    <h1 id="date">Date:</h1>
+    <h2 id="title">Title:</h2>
+    <p id="description">Description:</p>
+    <img id="image"></img>
+    <script>
+      async function fetchdata() {
+        try {
+          const resp = await fetch(
+            "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+          );
+          const json = await resp.json();
+          console.log(json);
+          document.querySelector("#title").innerHTML=json.title;
+          document.querySelector("#date").innerHTML=json.date;
+          document.querySelector("#description").innerHTML=json.explanation;
+          const img=document.querySelector('#image');
+          img.setAttribute("src",json.url)
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    </script>
+  </body>
+</html>
